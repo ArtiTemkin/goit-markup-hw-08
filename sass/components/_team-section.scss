@@ -1,12 +1,12 @@
 .team-section {
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .team-section__list {
-    display: flex;
-    margin-top: 50px;
+    // display: flex;
+    margin-bottom: 30px;
 }
 
 .team-section__item {
@@ -14,7 +14,7 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -45,7 +45,8 @@
     display: flex;
     padding-left: 32px;
     padding-right: 32px;
-    justify-content: space-between;
+    justify-content: center;
+    // justify-content: space-between;
 }
 
 .social-list__link {
@@ -63,7 +64,9 @@
         background-color: var(--hover-backgroundcolor);
     }
 }
-
+.social-list__item:not(:last-child) {
+    margin-right: 10px;
+}
 .social-list__icon {
     width: 20px;
     height: 20px;

@@ -1,14 +1,18 @@
 .projects-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .buttons {
     display: flex;
-    justify-content: center;
-    margin: 0px 0px 50px;
+    flex-wrap: wrap;
+    // justify-content: center;
+    margin: 0px 0px 40px;
+    gap: 8px;
 }
-
+.buttons__item {
+    
+}
 .buttons__item:not(:last-child) {
     margin-right: 8px;
 }
@@ -48,20 +52,20 @@
 }
 
 .projects-section__list {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
 }
 
-.projects-section__item {
-    margin-right: 30px;
+.projects-section__item:not(:last-child) {
+    margin-bottom: 30px;
 
-    &:nth-child(3n) {
-        margin-right: 0;
-    }
+    // &:nth-child(3n) {
+    //     margin-right: 0;
+    // }
 
-    &:nth-child(-n+6) {
-        margin-bottom: 30px;
-    }
+    // &:nth-child(-n+6) {
+    //     margin-bottom: 30px;
+    // }
 
     &:hover,
     &:focus,

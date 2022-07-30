@@ -21,33 +21,53 @@
     <header class="page-header">
         <div class="container">
             <a href="./index.html" class="logo"><span class="logo--text-decoration">Web</span>Studio</a>
-            <nav class="navigation">
-                <ul class="navigation-list list">
-                    <li class="navigation-list__item"><a href="./index.html"
-                            class="navigation__link link">Студия</a></li>
-                    <li class="navigation-list__item"><a href="./Portfolio.html" class="navigation__link link current">Портфолио</a>
-                    </li>
-                    <li class="navigation-list__item"><a href="#" class="navigation__link link">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link link">
-                        <svg class="contacts__icon">
-                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link link">
-                        <svg class="contacts__icon">
-                            <use href="./images/symbol-defs.svg#icon-phone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <div class="mobile-menu">
+                <button type="button" class="mobile-menu__button" data-menu-button aria-expanded="false"
+                    aria-controls="mobile-menu__container">
+                    <svg class="mobile-menu__icon" width="40px" height="40px" aria-label="Переключаль мобильного меню">
+                        <use class="mobile-menu__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                        <use class="mobile-menu__icon-cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu__container " data-menu id="mobile-menu__container">
+                    <nav class="navigation">
+                        <ul class="navigation-list list">
+                            <li class="navigation-list__item"><a href="./index.html"
+                                    class="navigation__link link current">Студия</a></li>
+                            <li class="navigation-list__item"><a href="./Portfolio.html"
+                                    class="navigation__link link">Портфолио</a></li>
+                            <li class="navigation-list__item"><a href="#" class="navigation__link link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="contacts list">
+                        <li class="contacts__item">
+                            <a href="mailto:info@devstudio.com" class="contacts__link link">
+                                <svg class="contacts__icon">
+                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="tel:+380961111111" class="contacts__link link">
+                                <svg class="contacts__icon">
+                                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="social-network">
+                        <ul class="social-network__list list">
+                            <li class="social-network__item"><a class="social-network__link">Instagram</a></li>
+                            <li class="social-network__item"><a class="social-network__link">Twitter</a></li>
+                            <li class="social-network__item"><a class="social-network__link">Facebook</a></li>
+                            <li class="social-network__item"><a class="social-network__link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
         </div>
     </header>
 
@@ -66,7 +86,7 @@
                     <li class="projects-section__item">
                         <a>
                             <div class="project-card">
-                                <img src="./images/tehnokryak.jpg" alt="Изображения карточек нашей команды" width="370">
+                                <img src="./images/tehnokryak.jpg" alt="Изображения карточек нашей команды" >
                                 <div class="project-card__description">
                                     <p class="project-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
@@ -82,7 +102,7 @@
                     <li class="projects-section__item">
                         <a>
                             <div class="project-card">
-                                <img src="./images/new-orlean.jpg" alt="Изображения карточек нашей команды" width="370">
+                                <img src="./images/new-orlean.jpg" alt="Изображения карточек нашей команды" >
                                 <div class="project-card__description">
                                     <p class="project-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
@@ -98,7 +118,7 @@
                     <li class="projects-section__item">
                         <a>
                             <div class="project-card">
-                                <img src="./images/seafood.jpg" alt="Изображения карточек нашей команды" width="370">
+                                <img src="./images/seafood.jpg" alt="Изображения карточек нашей команды" >
                                 <div class="project-card__description">
                                     <p class="project-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
@@ -114,7 +134,7 @@
                     <li class="projects-section__item">
                         <a>
                             <div class="project-card">
-                                <img src="./images/prime.jpg" alt="Изображения карточек нашей команды" width="370">
+                                <img src="./images/prime.jpg" alt="Изображения карточек нашей команды" >
                                 <div class="project-card__description">
                                     <p class="project-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
@@ -130,7 +150,7 @@
                     <li class="projects-section__item">
                         <a>
                             <div class="project-card">
-                                <img src="./images/boxes.jpg" alt="Изображения карточек нашей команды" width="370">
+                                <img src="./images/boxes.jpg" alt="Изображения карточек нашей команды" >
                                 <div class="project-card__description">
                                     <p class="project-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
@@ -146,7 +166,7 @@
                     <li class="projects-section__item">
                         <a>
                             <div class="project-card">
-                                <img src="./images/boarder.jpg" alt="Изображения карточек нашей команды" width="370">
+                                <img src="./images/boarder.jpg" alt="Изображения карточек нашей команды" >
                                 <div class="project-card__description">
                                     <p class="project-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
@@ -162,7 +182,7 @@
                     <li class="projects-section__item">
                         <a>
                             <div class="project-card">
-                                <img src="./images/limited-edition.jpg" alt="Изображения карточек нашей команды" width="370">
+                                <img src="./images/limited-edition.jpg" alt="Изображения карточек нашей команды" >
                                 <div class="project-card__description">
                                     <p class="project-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
@@ -178,7 +198,7 @@
                     <li class="projects-section__item">
                         <a>
                             <div class="project-card">
-                                <img src="./images/lab.jpg" alt="Изображения карточек нашей команды" width="370">
+                                <img src="./images/lab.jpg" alt="Изображения карточек нашей команды" >
                                 <div class="project-card__description">
                                     <p class="project-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
@@ -194,7 +214,7 @@
                     <li class="projects-section__item">
                         <a>
                             <div class="project-card">
-                                <img src="./images/growing-business.jpg" alt="Изображения карточек нашей команды" width="370">
+                                <img src="./images/growing-business.jpg" alt="Изображения карточек нашей команды" >
                                 <div class="project-card__description">
                                     <p class="project-card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить
@@ -214,7 +234,7 @@
 
     <footer class="footer-section">
         <div class="container">
-            <div>
+            <div class="container__adress">
                 <a href="./index.html" class="logo logo--footer"><span class="logo--text-decoration">Web</span>Studio</a>
                 <address class="adress">
                     <p class="adress__location">г. Киев, пр-т Леси Украинки, 26</p>
@@ -272,5 +292,6 @@
     
     
     </footer>
+    <script src="./JS/mobile-menu.js"></script>
 </body>
 </html>
