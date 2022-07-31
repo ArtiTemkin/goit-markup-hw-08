@@ -5,11 +5,15 @@
 
 .customers-section__list {
     display: flex;
-    flex-wrap: wrap;  
-    margin: -15px;  
+    flex-wrap: wrap; 
+    margin: -15px; 
+    
+    // margin: -15px;  
 }
 .customers-section__item {
-    width: calc((100%-4*15px)/2);
+    max-width: 210px;
+    // display: flex;
+    flex-basis: calc((100%-4*15px)/2);
     margin: 15px;
 
 }
@@ -33,8 +37,9 @@
 }
 
 .customers-section__link {
+    
     display: flex;
-    // width: 100%;
+    width: 100%;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
