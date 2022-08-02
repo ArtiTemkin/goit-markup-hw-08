@@ -1,21 +1,27 @@
 .customers-section {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .customers-section__list {
     display: flex;
     flex-wrap: wrap; 
-    margin: -15px; 
-    
-    // margin: -15px;  
+    gap: 30px;
 }
 .customers-section__item {
-    max-width: 210px;
-    // display: flex;
-    flex-basis: calc((100%-4*15px)/2);
-    margin: 15px;
+    flex-basis: calc((100% - 30px) / 2);
 
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 150px) / 6);
+    }
 }
 // .customers-section__item:not(:last-child) {
 //     margin-bottom: 30px;

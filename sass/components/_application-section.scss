@@ -1,11 +1,17 @@
 .application-section {
     display: none;
     padding-bottom: 94px;
+
+    @media screen and (min-width:1200px) {
+        & {
+            display: block;
+        }
+    }
     
 }
 
 .application-section__list {
-    // display: flex;
+    display: flex;
 }
 
 .application-section__item {

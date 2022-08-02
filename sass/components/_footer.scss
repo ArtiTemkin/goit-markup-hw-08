@@ -3,13 +3,25 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-section .container {
-    // display: flex;
+.position-tablet {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 60px;
+    }
 }
-.container__adress {
-    text-align: center;
+@media screen and (min-width:1200px) {
+    .footer-section .container {
+            display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+        }
 }
-
+@media screen and (max-width: 1199px){
+    .container__adress {
+        text-align: center;
+    }
+}
 .adress__location {
     
     margin-top: 20px;
@@ -25,7 +37,7 @@
 }
 
 .adress__item {
-    justify-content: center;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -35,6 +47,12 @@
 
     &:not(:last-child) {
         margin-bottom: 9px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        & {
+            justify-content: center;
+        }
     }
 }
 .footer-socials__icon {
@@ -48,25 +66,36 @@
 }
 
 .footer-socials {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     // padding-left: 70px;
     // padding-right: 93px;
 }
 .footer-section__title {
-    text-align: center;
+   
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .footer-socials__list {
     display: flex;
     margin-top: 20px;
-    justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+    }
+    
 }
 
 .footer-socials__link {
@@ -88,12 +117,24 @@
 
 .subscribe {
     padding-top: 12px;
+
+   
 }
 
 .subscribe__form {
-    // display: flex;
     align-items: center;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column; 
+    }
+    @media screen and (min-width: 1200px) {
+        & {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 
 .subsribe__icon {
@@ -116,11 +157,20 @@
     border-radius: 4px;
     padding: 15px 16px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    // margin-right: 12px;
+    margin-bottom: 20px;    
 
     &,
     &::placeholder {
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 450px;
+    }
+    @media screen and (min-width:1200px) {
+        & {
+            width: 100%;
+            margin-right: 12px;
+        }
     }
 }

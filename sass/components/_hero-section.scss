@@ -9,13 +9,43 @@
     padding-bottom: 200px;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../images/header.jpg);
-    background-size: cover;
+            rgba(47, 48, 58, 0.4)), url(../images/Header_480.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
 
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/Header_480@2x.jpg);
+            }
+        }
+    @media screen and (max-width: 768px) {
+        & {
+            background-image: url(../images/Header_768.jpg);
+        }
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+            background-image: url(../images/Header_768@2x.jpg);
+        }
+    }
+    @media screen and (max-width: 1600px) {
+        & {
+            background-image: url(../images/header_1600.jpg);
+        }
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        & {
+            background-image: url(../images/header1600@2x.jpg);
+        }
+    }
 }
-
 .hero-section__title {
     max-width: 696px;
     margin: auto;
