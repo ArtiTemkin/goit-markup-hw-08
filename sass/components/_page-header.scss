@@ -27,9 +27,10 @@
     }
     
 }
-// .mobile-menu__button: .mobile-menu__icon-cross
-//     {fill: var(--hover-backgroundcolor);
-// }
+.mobile-menu__button:focus .mobile-menu__icon-cross,
+.mobile-menu__button:focus .mobile-menu__icon-cross {
+    fill: var(--hover-backgroundcolor);
+}
 
 .mobile-menu__container {
     //  height: 100%;
@@ -91,6 +92,12 @@
             margin-right: 32px;
         }
     }
+    @media screen and (max-width: 767px) {
+        .current {
+            color: var(--hover-backgroundcolor);
+        }
+    }
+    @media screen and (min-width: 768px) {
         & .current::after {
             content: '';
             position: absolute;
@@ -101,6 +108,7 @@
             background-color: var(--hover-backgroundcolor);
             border-radius: 2px;
         }
+    }
 }
 
 

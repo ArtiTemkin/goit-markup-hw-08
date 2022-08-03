@@ -100,7 +100,8 @@
 @media screen and (min-width: 768px) {
     .projects-section__link {
         display: flex;
-            flex-direction: column;
+        height: 100%;
+        flex-direction: column;
     }
 }
 

@@ -1,8 +1,8 @@
 .hero-section {
     background-color: #2F303A;
     text-align: center;
-    height: 600px;
-    max-width: 1600px;
+    height: auto;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -21,9 +21,10 @@
                 background-image: url(../images/Header_480@2x.jpg);
             }
         }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width:481px) and (max-width: 768px) {
         & {
             background-image: url(../images/Header_768.jpg);
+            max-width: 768px;
         }
     }
     @media (min-device-pixel-ratio: 2),
@@ -33,9 +34,10 @@
             background-image: url(../images/Header_768@2x.jpg);
         }
     }
-    @media screen and (max-width: 1600px) {
+    @media screen and (min-width: 769px) and (max-width: 1600px) {
         & {
             background-image: url(../images/header_1600.jpg);
+            max-width: 1600px;
         }
     }
     @media (min-device-pixel-ratio: 2),
@@ -47,12 +49,18 @@
     }
 }
 .hero-section__title {
-    max-width: 696px;
+    max-width: 360px;
     margin: auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #fff;
+
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.35;
+        max-width: 696px;
+    }
 }

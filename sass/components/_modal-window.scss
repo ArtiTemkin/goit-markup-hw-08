@@ -60,11 +60,15 @@
 .modal__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+
+    @media screen and (min-width:1200px) {
+        line-height: 1.15;
+    }
 }
 
 .form {
@@ -191,11 +195,16 @@
     position: relative;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.71;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #757575;
     margin-bottom: 0;
     margin-left: 9px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .form__conditions-link {
