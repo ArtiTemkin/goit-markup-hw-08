@@ -67,11 +67,9 @@ img {
     color: #212121;
     font-weight: 700;
     line-height: 1.17;
-    @media screen and (min-width:768x) {
-        font-size: 36px;
-        min-width: 314px;
-    }
-    @media screen and (min-width:768x) {
+    
+    
+    @media screen and (min-width:1200px) {
         font-size: 36px;
         min-width: 366px;
     }
